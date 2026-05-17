@@ -16,17 +16,17 @@ function Home() {
       title: 'Create Post',
       html: `
         <div class="mt-2 grid gap-3 text-left">
-          <label class="grid gap-2 text-sm font-semibold text-red-500">
+          <label class="grid gap-2 text-sm font-semibold text-slate-700">
             <span>Image</span>
-            <input id="post-image" class="w-full border border-red-900 bg-black px-3 py-2.5 text-white outline-none focus:border-red-500" type="file" accept="image/*" />
+            <input id="post-image" class="w-full rounded-md border border-slate-300 bg-white px-3 py-2.5 text-slate-800 outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" type="file" accept="image/*" />
           </label>
-          <label class="grid gap-2 text-sm font-semibold text-red-500">
+          <label class="grid gap-2 text-sm font-semibold text-slate-700">
             <span>Title</span>
-            <input id="post-title" class="w-full border border-red-900 bg-black px-3 py-2.5 text-white outline-none focus:border-red-500" type="text" placeholder="Post title" />
+            <input id="post-title" class="w-full rounded-md border border-slate-300 bg-white px-3 py-2.5 text-slate-800 outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" type="text" placeholder="Post title" />
           </label>
-          <label class="grid gap-2 text-sm font-semibold text-red-500">
+          <label class="grid gap-2 text-sm font-semibold text-slate-700">
             <span>Description</span>
-            <textarea id="post-content" class="min-h-28 w-full resize-y border border-red-900 bg-black px-3 py-2.5 text-white outline-none focus:border-red-500" placeholder="Write your post..."></textarea>
+            <textarea id="post-content" class="min-h-28 w-full resize-y rounded-md border border-slate-300 bg-white px-3 py-2.5 text-slate-800 outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500" placeholder="Write your post..."></textarea>
           </label>
         </div>
       `,
@@ -35,11 +35,11 @@ function Home() {
       showCancelButton: true,
       buttonsStyling: false,
       customClass: {
-        popup: 'rounded-md border border-red-700 bg-black text-white',
-        title: 'text-red-500',
-        confirmButton: 'mx-2 bg-red-700 px-5 py-2.5 font-bold text-white hover:bg-red-600',
-        cancelButton: 'mx-2 bg-black border border-red-700 px-5 py-2.5 font-bold text-red-500 hover:bg-red-900',
-        validationMessage: 'bg-black text-red-500 border border-red-700',
+        popup: 'rounded-xl border border-slate-200 bg-white text-slate-800 shadow-xl',
+        title: 'text-indigo-600',
+        confirmButton: 'mx-2 rounded-lg bg-indigo-600 px-5 py-2.5 font-bold text-white hover:bg-indigo-700',
+        cancelButton: 'mx-2 rounded-lg bg-white border border-slate-300 px-5 py-2.5 font-bold text-slate-600 hover:bg-slate-50',
+        validationMessage: 'bg-red-50 text-red-600 border border-red-200 rounded-md',
       },
       focusConfirm: false,
       preConfirm: () => {
@@ -95,8 +95,8 @@ function Home() {
         timer: 1800,
         showConfirmButton: false,
         customClass: {
-          popup: 'rounded-md border border-red-700 bg-black text-white',
-          title: 'text-red-500',
+          popup: 'rounded-xl border border-slate-200 bg-white text-slate-800 shadow-xl',
+          title: 'text-indigo-600',
         },
       })
     } catch (error) {
@@ -107,9 +107,9 @@ function Home() {
         confirmButtonText: 'Okay',
         buttonsStyling: false,
         customClass: {
-          popup: 'rounded-md border border-red-700 bg-black text-white',
+          popup: 'rounded-xl border border-slate-200 bg-white text-slate-800 shadow-xl',
           title: 'text-red-500',
-          confirmButton: 'bg-red-700 px-5 py-2.5 font-bold text-white hover:bg-red-600',
+          confirmButton: 'rounded-lg bg-indigo-600 px-5 py-2.5 font-bold text-white hover:bg-indigo-700',
         },
       })
     } finally {
@@ -127,10 +127,10 @@ function Home() {
       cancelButtonText: 'Cancel',
       buttonsStyling: false,
       customClass: {
-        popup: 'rounded-md border border-red-700 bg-black text-white',
-        title: 'text-red-500',
-        confirmButton: 'mx-2 bg-red-700 px-5 py-2.5 font-bold text-white hover:bg-red-600',
-        cancelButton: 'mx-2 bg-black border border-red-700 px-5 py-2.5 font-bold text-red-500 hover:bg-red-900',
+        popup: 'rounded-xl border border-slate-200 bg-white text-slate-800 shadow-xl',
+        title: 'text-slate-800',
+        confirmButton: 'mx-2 rounded-lg bg-red-600 px-5 py-2.5 font-bold text-white hover:bg-red-700',
+        cancelButton: 'mx-2 rounded-lg bg-white border border-slate-300 px-5 py-2.5 font-bold text-slate-600 hover:bg-slate-50',
       },
     })
 
@@ -154,8 +154,8 @@ function Home() {
           showConfirmButton: false,
           timer: 1500,
           customClass: {
-            popup: 'rounded-md border border-red-700 bg-black text-white',
-            title: 'text-red-500',
+            popup: 'rounded-xl border border-slate-200 bg-white text-slate-800 shadow-xl',
+            title: 'text-indigo-600',
           },
         })
       } catch (error) {
@@ -166,9 +166,9 @@ function Home() {
           confirmButtonText: 'Okay',
           buttonsStyling: false,
           customClass: {
-            popup: 'rounded-md border border-red-700 bg-black text-white',
+            popup: 'rounded-xl border border-slate-200 bg-white text-slate-800 shadow-xl',
             title: 'text-red-500',
-            confirmButton: 'bg-red-700 px-5 py-2.5 font-bold text-white hover:bg-red-600',
+            confirmButton: 'rounded-lg bg-indigo-600 px-5 py-2.5 font-bold text-white hover:bg-indigo-700',
           },
         })
       }
@@ -176,9 +176,9 @@ function Home() {
   }
 
   return (
-    <main className="min-h-screen bg-black px-px sm:px-[10vw] lg:px-[20vw]">
-      <section className="mx-auto min-h-screen max-w-[760px] border-x border-red-950 bg-[#0f0f0f]">
-        <header className="sticky top-0 z-10 border-b border-neutral-800 bg-[#0f0f0f]/95 px-3 py-3 backdrop-blur sm:px-4">
+    <main className="min-h-screen bg-slate-50 px-px sm:px-[10vw] lg:px-[20vw] py-4">
+      <section className="mx-auto min-h-screen max-w-[760px] rounded-xl border border-slate-200 bg-slate-100/50 shadow-sm overflow-hidden">
+        <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/95 px-3 py-3 backdrop-blur sm:px-4">
           <div className="mx-auto max-w-[620px]">
             <CreatePostButton isCreating={isCreating} onClick={openCreatePostModal} />
           </div>

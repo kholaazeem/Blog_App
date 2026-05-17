@@ -4,23 +4,23 @@ function PostCard({ post, onDelete }) {
     : 'New post'
 
   return (
-    <article className="relative overflow-hidden border border-neutral-800 bg-[#181818] shadow-[0_12px_30px_rgba(0,0,0,0.22)]">
+    <article className="relative overflow-hidden rounded-xl border border-slate-200 bg-white shadow-sm transition hover:shadow-md">
       <img
-        className="aspect-[16/8.5] w-full border-b-2 border-red-700 object-cover"
+        className="aspect-[16/8.5] w-full border-b border-slate-100 object-cover"
         src={post.image}
         alt={post.title}
       />
 
       <div className="p-4">
-        <p className="mb-2 text-[11px] font-bold uppercase text-red-400">{postDate}</p>
-        <h2 className="mb-2 text-xl font-bold leading-tight text-white sm:text-2xl">
+        <p className="mb-2 text-[11px] font-bold uppercase text-indigo-600">{postDate}</p>
+        <h2 className="mb-2 text-xl font-bold leading-tight text-slate-800 sm:text-2xl">
           {post.title}
         </h2>
-        <p className="text-sm leading-6 text-neutral-300 sm:text-base">{post.content}</p>
+        <p className="text-sm leading-6 text-slate-600 sm:text-base">{post.content}</p>
       </div>
       <button
         onClick={() => onDelete(post._id)}
-        className="absolute bottom-4 right-4 text-red-700 hover:text-red-500 transition-colors"
+        className="absolute bottom-4 right-4 text-slate-400 hover:text-red-500 transition-colors"
         title="Delete Post"
       >
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
